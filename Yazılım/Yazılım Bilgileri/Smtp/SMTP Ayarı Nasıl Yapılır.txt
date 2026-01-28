@@ -1,0 +1,183 @@
+appsettings.json 
+
+"SMTPSettings": {
+  "Host": "smtp.gmail.com",
+  "Port": 587,
+  "Username": "sevki6463@gmail.com",
+  "Password": "fknnvxdlaeaskdnz",
+  "FromEmail": "sevki6463@gmail.com"
+}
+
+namespace WebUygulama.Models
+{
+    public class SMTPSettings
+    {
+        public string Host { get; set; }
+        public int Port { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string FromEmail { get; set; }
+    }
+}
+
+// SMTP ayarlarını yükleyin
+
+builder.Services.Configure<SMTPSettings>(builder.Configuration.GetSection("SMTPSettings")); Program.cs 
+
+// Şifre sıfırlama talebi formu
+[HttpGet]
+public IActionResult ForgotPassword()
+{
+    return View();
+}
+
+// Şifre sıfırlama isteğini işleme
+[HttpPost]
+public async Task<IActionResult> ForgotPassword(string email)
+{
+    var kullanici = await _db.Kullanici.FirstOrDefaultAsync(x => x.Email == email);
+    if (kullanici == null)
+    {
+        TempData["Error"] = "E-posta adresi ile ilgili kullanıcı bulunamadı.";
+        return View();
+    }
+
+    // Token oluşturma
+    var token = GenerateResetToken();
+    kullanici.ResetToken = token;
+    kullanici.TokenExpireDate = DateTime.Now.AddHours(1); // Token 1 saat geçerli
+    await _db.SaveChangesAsync();
+
+    // E-posta gönderme
+    SendResetEmail(kullanici.Email, token);
+
+    TempData["Success"] = "E-posta adresinize bir şifre sıfırlama bağlantısı gönderildi.";
+    return RedirectToAction("ForgotPassword");
+}
+
+// Şifre sıfırlama sayfası
+[HttpGet]
+public IActionResult ResetPassword(string token)
+{
+    var kullanici = _db.Kullanici.FirstOrDefault(x => x.ResetToken == token && x.TokenExpireDate > DateTime.Now);
+    if (kullanici == null)
+    {
+        TempData["Error"] = "Geçersiz veya süresi dolmuş token.";
+        return RedirectToAction("ForgotPassword");
+    }
+
+    return View();
+}
+
+// Şifreyi yenileme işlemi
+[HttpPost]
+public async Task<IActionResult> ResetPassword(string token, string newPassword)
+{
+    var kullanici = _db.Kullanici.FirstOrDefault(x => x.ResetToken == token && x.TokenExpireDate > DateTime.Now);
+    if (kullanici == null)
+    {
+        TempData["Error"] = "Geçersiz veya süresi dolmuş token.";
+        return RedirectToAction("ForgotPassword");
+    }
+
+    // Şifreyi hash'le
+    kullanici.Sifre = HashPassword(newPassword); // Şifreyi güvenli bir şekilde hashle
+    kullanici.ResetToken = null;
+    kullanici.TokenExpireDate = null;
+    await _db.SaveChangesAsync();
+
+    TempData["Success"] = "Şifreniz başarıyla değiştirildi.";
+    return RedirectToAction("GirisYap", "WithoutIdentity");
+}
+
+// Token oluşturma
+private string GenerateResetToken()
+{
+    using (var rng = new RNGCryptoServiceProvider())
+    {
+        byte[] tokenBytes = new byte[32];
+        rng.GetBytes(tokenBytes);
+        return Convert.ToBase64String(tokenBytes);
+    }
+}
+
+public string HashPassword(string password)
+{
+    // BCrypt ile şifreyi hash'liyoruz
+    return BCrypt.Net.BCrypt.HashPassword(password);
+}
+
+ private void SendResetEmail(string email, string token)
+ {
+     var mailMessage = new MailMessage
+     {
+         From = new MailAddress(_smtpSettings.FromEmail),
+         Subject = "Şifre Sıfırlama Talebi",
+         Body = $"Şifrenizi sıfırlamak için aşağıdaki bağlantıya tıklayın:\n" +
+                $"http://localhost:5285/WithoutIdentity/ResetPassword?token={token}",
+         IsBodyHtml = false
+     };
+     mailMessage.To.Add(email);
+
+     using (var smtpClient = new SmtpClient(_smtpSettings.Host))
+     {
+         smtpClient.Port = _smtpSettings.Port;
+         smtpClient.Credentials = new NetworkCredential(_smtpSettings.Username, _smtpSettings.Password);
+         smtpClient.EnableSsl = true;
+         smtpClient.Send(mailMessage);
+     }
+ }
+
+
+Cshtmller 
+ForgotPassword.cshtml 
+@{
+    ViewData["Title"] = "Şifreyi Unuttum";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label for="email">E-posta adresi</label>
+        <input type="email" class="form-control" id="email" name="email" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Şifreyi Sıfırla</button>
+</form>
+
+
+ResetPassword.cshtml
+
+@{
+    ViewData["Title"] = "Şifreyi Değiştir";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label for="newPassword">Yeni Şifre</label>
+        <input type="password" class="form-control" id="newPassword" name="newPassword" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Şifreyi Değiştir</button>
+</form>

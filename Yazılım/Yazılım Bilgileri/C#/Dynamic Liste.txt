@@ -1,0 +1,11 @@
+Dynamic kullanmanın avantajı
+Metodun parametresini List<dynamic> yaparsan, içine farklı tiplerde nesneler gönderebilirsin.
+
+Mesela anonim tipler, normal sınıflar vs.
+
+Bu sayede tip uyuşmazlığı hatası olmaz.
+
+Ama dynamic kullandığında, derleyici tipi kontrol etmez, çalışma zamanında o değişkenin tipi belirlenir.
+
+Böylece farklı türdeki nesnelerle esnek şekilde çalışabilirsin.
+

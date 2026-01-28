@@ -1,0 +1,13 @@
+> **Not:** `retriever` nesnesinin önceden tanımlanmış olması gerekir.
+
+### Obsidian İpucu: Kod Bloğu Kısayolu
+Her seferinde elle tırnak yazmak istemiyorsan:
+1.  Metni seç.
+2.  `Ctrl + P` basıp "Insert code block" yaz.
+3.  Veya notunun içinde bir yere sağ tıklayıp "Insert" menüsünden seç.
+
+1. Dil Belirtecini Eksik Yazmış Olabilirsin
+
+Markdown'da kod bloğunu başlattığın ilk üç tırnağın (```) hemen yanına hangi dili kullandığını yazman gerekir. Eğer boş bırakırsan Obsidian bunu "düz metin" sanır ve renklendirmez.
+
+Çözüm: Kodun başına şunu yaz: ```python (veya hangi dildeyse)

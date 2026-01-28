@@ -1,0 +1,6 @@
+4.AŞAMA
+
+Projemizin çalışması için bir diğer gereklilik ollama platformu'nun yüklenmesi gerekiyor
+https://ollama.com/download/windows bu linki kullanarak ollamayı indiriniz
+Ollamayı indirdikten sonra cmd ekranında şu komutu çalıştırın ollama pull bge-m3
+Bu bizim projemizde kullandığımız embedding modelidir ve programın çalışması için gereklidir

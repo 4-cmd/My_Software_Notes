@@ -1,0 +1,5 @@
+📦 Veri Yapıları:
+→ Array, Linked List, Stack, Queue, Hash Map, Tree, Heap, Graph
+
+⚙️ Algoritmalar:
+→ Sorting, Searching, Recursion, Dynamic Programming, Backtracking, BFS/DFS, Greedy, Dijkstra

@@ -1,0 +1,3 @@
+Bu çalışma, geliştiricinin LlamaIndex çatısı ve MCP (Model Context Protocol) standartları üzerindeki teknik hakimiyetini ve uygulama geliştirme deneyimini kanıtlamak amacıyla bir "Kavram Kanıtı" (Proof of Concept) olarak hazırlanmıştır.
+
+Bu depo (repository), projenin mimari yapısını ve kodlama standartlarını göstermek için tasarlanmıştır. Güvenlik ve gizlilik nedeniyle bazı API yapılandırmaları ve özel anahtarlar dahil edilmemiştir; bu sebeple proje "tak-çalıştır" modunda değildir, bir teknik portfolyo örneğidir.

@@ -1,0 +1,8 @@
+Database Backup : Veritabanındaki verileri bir .bak uzantılı dosyaya kaydeder 
+https://www.youtube.com/watch?v=S6uo4_f0Gvw
+
+
+Database Restore : Daha Önce kaydedilmiş .bak dosyasini kullanarak veritabanını korumak
+Not : Burada yeni bir veri tabanı kurmak gerekmez zaten .bak dosyasi bunu bizim yerimize yapar 
+https://www.youtube.com/watch?v=btePFK-5gpM
+

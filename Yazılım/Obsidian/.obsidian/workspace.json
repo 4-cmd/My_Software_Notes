@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "44a1632ba198310f",
+    "type": "split",
+    "children": [
+      {
+        "id": "16fc5eab9321ad32",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ceb50131f64a366",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Langchain/Chunklara_Ayırma_ve_Documentlar/Semantic Metin Ayırma.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Semantic Metin Ayırma"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "31bf15617bbdc17e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c7bcd8f809ac564",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f383e34ebfbcaa0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Dosya Gezgini"
+            }
+          },
+          {
+            "id": "df6101b68c59a964",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ara"
+            }
+          },
+          {
+            "id": "f0eb626650257882",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Yer İmleri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2a72e180e863af46",
+    "type": "split",
+    "children": [
+      {
+        "id": "c6fc1b4bf9c2a797",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e57d61c2e8435940",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Obsidian Nasıl Kullanılır.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Obsidian Nasıl Kullanılır için geri bağlantılar"
+            }
+          },
+          {
+            "id": "837f5a968d0e5ff4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Obsidian Nasıl Kullanılır.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Obsidian Nasıl Kullanılır'dan giden bağlantılar"
+            }
+          },
+          {
+            "id": "e6793854646caca1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiketler"
+            }
+          },
+          {
+            "id": "e613709e83a7e163",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tüm özellikler"
+            }
+          },
+          {
+            "id": "aefe8cfe4ded7a68",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Obsidian Nasıl Kullanılır.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Obsidian Nasıl Kullanılır ana hatları"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Hızlı geçişi aç": false,
+      "graph:Grafik görünümünü aç": false,
+      "canvas:Yeni tuval oluşturun": false,
+      "daily-notes:Bugünün Notunu Aç": false,
+      "templates:Şablon ekle": false,
+      "command-palette:Komut paletini aç": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7ceb50131f64a366",
+  "lastOpenFiles": [
+    "Langchain/Chunklara_Ayırma_ve_Documentlar/MarkitDown Langchain ile.md",
+    "Langchain/document_transformers nasıl kullanılır!.md",
+    "LlamaIndex/Embedding İşlemleri.md",
+    "LlamaIndex/CallbackManager Nedir.md",
+    "LlamaIndex/LlamaIndex Processor.md",
+    "LlamaIndex/Messages.md",
+    "LlamaIndex/Retriever Güçlendirme.md",
+    "Langchain/Trim Messages.md",
+    "Langchain/Langchain LLM'e Hafıza Ekleme İşlemi.md",
+    "Langchain/Retriever Güçlendirme.md",
+    "Pydantic Useful Codes/pydantic-settings Ayarları.md",
+    "Pydantic Useful Codes/Pydantic Veri Doğrulama.md",
+    "Javascript/Javascript Tür Dönüşümü.md",
+    "Requests_ve_BS/Request ve BS Tutorial.md",
+    "Pydantic Useful Codes/Computed Fields Kullanımı.md",
+    "Requests_ve_BS/Diğer Notlar.md",
+    "Selenium Python/Selenium Ek Notlar.md",
+    "Selenium Python/Selenium Tutorial.md",
+    "Selenium Python",
+    "SQL/SQL Identity Sıfırlama.md",
+    "Streamlit/Streamlit Farklı Bir Sayfada Session_state kullanmak.md",
+    "Streamlit/Streamlit ve Thread ile Çalışmak.md",
+    "Google Calender Useful Codes/Bağlanma Kodu ve Bağlantı Başarılı mı Kodu.md",
+    "Google Calender Useful Codes/Google Calender Takvim Ekleme Kodu.md",
+    "Google Calender Useful Codes/Google Calender'dan Takvim Silme.md",
+    "Google Calender Useful Codes/Google ISO Formatından gün ay ve yıl olarak almak.md",
+    "Google Calender Useful Codes/Google Calender Takvimleri Listeleme.md",
+    "Google Calender Useful Codes",
+    "Javascript/TypeORM/Başlıksız",
+    "Javascript/TypeORM",
+    "Javascript/Puppeteer",
+    "Javascript",
+    "Threading",
+    "SQL_ALCHEMY",
+    "Pydantic Useful Codes",
+    "Langchain/Chunklara_Ayırma_ve_Documentlar",
+    "Başlıksız 1.canvas",
+    "Başlıksız.canvas"
+  ]
+}

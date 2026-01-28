@@ -1,0 +1,17 @@
+Server= localhost\SQLEXPRESS; 
+
+C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Log\20250224_153544
+
+C:\SQL2022\Express_ENU
+
+C:\Program Files\Microsoft SQL Server\160\SSEI\Resources
+
+userx_name Kullanici adi 
+
+Net141jm Parola 
+
+
+Yeni Login node.js için SQL Server Authention 
+node_js_user : username 
+
+Net141jm : password 

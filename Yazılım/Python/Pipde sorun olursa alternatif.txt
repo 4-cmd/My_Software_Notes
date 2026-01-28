@@ -1,0 +1,13 @@
+1. Alternatif Sunucu (Mirror) Kullan (En Hızlı Çözüm)
+
+Ana sunucuya bağlanamıyorsan, güvenilir başka bir ayna sunucuyu dene. Genellikle bu yöntem bağlantı sorunlarını anında çözer:
+
+pip install pyodbc -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+3. Trusted Host Belirle
+
+Bazen SSL sertifikası doğrulama aşamasında takılmalar olur. Sunucuyu "güvenilir" olarak işaretleyip dene:
+Bash
+
+pip install pyodbc --trusted-host pypi.org --trusted-host files.pythonhosted.org

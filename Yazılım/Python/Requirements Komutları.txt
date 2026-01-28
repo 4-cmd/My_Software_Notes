@@ -1,0 +1,20 @@
+pip install -r requirements.txt 
+Bu projenin çalışması için gereken tüm kütüphaneleri otomatik olarak kur.
+
+
+pip freeze > requirements.txt
+Bu komutu çalıştırdığınızda, projenizin kök dizininde requirements.txt adında, içinde projenizin tüm bağımlılıklarının bulunduğu bir dosya oluşacaktır.
+
+
+py -m pip install -r requirements.txt
+Bu komut, requirements.txt dosyasının içinde listelenen tüm paketleri ve onların belirtilen versiyonlarını sanal ortamınıza (veya aktif olan ortama) kuracaktır.
+
+Paketi yükseltmek için kullanabilirsin 
+pip install [package_name] --upgrade
+
+pip list : Yüklü olan tüm paketleri görmek için kullanılabilir 
+
+Belirli bir versiyonu yüklemek için örneğin
+pip install "protobuf<6.32"
+
+pip uninstall <packagename> : paketi ortadan kaldırır 

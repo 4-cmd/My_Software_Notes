@@ -1,0 +1,5 @@
+Route için yani add_node - delete_node gibi kısa ifadeler için kullanabileceğimiz Huggingface Modelleri
+
+distilbert/distilbert-base-uncased ✅ distilbert/distilbert-base-uncased (hafif / hızlı / ideal)
+google-bert/bert-base-uncased ✅ google-bert/bert-base-uncased (daha ağır ama biraz daha güçlü)
+

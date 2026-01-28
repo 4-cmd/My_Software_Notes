@@ -1,0 +1,38 @@
+Python’da fonksiyon çağrısı, fonksiyon tanımından sonra gelmelidir.
+
+Ör : 
+
+def function():
+   print("Merhaba Dünya")
+
+function() 
+
+Doğru olan budur 
+
+What is What 'Does Non-default argument follows default argument' wanna say
+ 
+Python'da, bir fonksiyondaki tüm varsayılan değere sahip olmayan (non-default) argümanlar (yani, eşittir işaretiyle bir başlangıç değeri atanmamış argümanlar), tüm varsayılan değere sahip argümanlardan (default) önce gelmek zorundadır.
+
+def process_and_persist_data(embedding_model_name: str,persist_dir: str,file_path: list = None): # 
+
+Bu şekilde olmalidir
+
+
+Opsiyonel Bir Değer'in Değeri var mi yok mu Nasıl Anlaşılır?
+
+if Randevu_Tarihi is not None:
+    # Değişkenin içinde bir değer (dize) var.
+    print(f"Randevu tarihi mevcut: {Randevu_Tarihi}")
+else:
+    # Değişkenin içinde bir değer yok (None).
+    print("Randevu tarihi belirtilmemiş (None).")
+
+
+None hatalarının önüne geçmek için yap bu durumda 
+    Satır_No: Optional[list[int]] = None
+    Mal_Hizmet: Optional[list[str]] = None
+    Miktar: Optional[list[int]] = None
+
+[None, 450.0, None] kabul edilir
+
+

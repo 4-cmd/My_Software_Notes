@@ -1,0 +1,11 @@
+⚠️ Uyarı Mesajının Anlamı
+
+RECYCLE BIN: Items are permanently deleted after 60 days. Right-click a page or section to move it out of the Recycle Bin.
+
+📝 Mesajın Açıklaması
+
+Bu uyarı size iki kritik bilgi veriyor:
+
+    Kalıcı Silinme Süresi: Geri Dönüşüm Kutusu'na düşen notlar, 60 gün bekletildikten sonra sistemden tamamen ve kalıcı olarak silinecektir. Bu, notunuzu kurtarmak için 60 günlük bir süreniz olduğu anlamına gelir.
+
+    Kurtarma Yöntemi: Silinen bir notu geri yüklemek için, not defterleri listesinde gördüğünüz silinmiş sayfanın (veya bölümün) üzerine sağ tıklamanız ve açılan menüden "Taşı veya Kopyala (Move or Copy)" seçeneğini kullanarak notu ana not defterinizdeki bir bölüme geri taşımanız gerektiğini belirtiyor.

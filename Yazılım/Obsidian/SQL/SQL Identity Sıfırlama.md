@@ -1,0 +1,4 @@
+
+```sql
+DBCC CHECKIDENT ('Şehirler', RESEED, 0); --> Auto Increment Değeri 0 olur 
+```

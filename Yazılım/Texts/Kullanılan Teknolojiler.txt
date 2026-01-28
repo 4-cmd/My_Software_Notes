@@ -1,0 +1,9 @@
+🛠️ Kullanılan Teknolojiler
+
+Python: Çekirdek programlama dili.
+
+LlamaIndex: Veri indeksleme ve LLM orkestrasyonu.
+
+MCP (Model Context Protocol): Model bağlam yönetimi ve sunucu mimarisi.
+
+Pydantic: Tip güvenliği ve yapılandırma yönetimi.
