@@ -1,7 +1,0 @@
-https://gemini.google.com/share/1ab4414f541c
-
-Bu link'de gemini nasıl typescript ile tablolar ve ilişkiler tanımlayacağını anlatıyor
-
-
-
-Adım adım nasıl yapabilrim paketler kurulum vs diyerek kodun olduğu alana gidebilirsin
