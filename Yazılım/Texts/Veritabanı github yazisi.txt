@@ -1,4 +1,0 @@
-  - DATABASE_URL Belirleme: Kullanım şeklinize göre aşağıdaki iki formattan size uygun olanı seçiniz
-    * Windows Authentication (Şifresiz Giriş) İçin : mssql+pyodbc://kullaniciadiniz/Veritabanıisminiz?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes
-    * SQL Server Kullanıcı Adı ve Şifresi ile Giriş için : mssql+pyodbc://KULLANICI_ADINIZ:SIFRENIZ@SERVER_ADINIZ\INSTANCE_ADINIZ/VERITABANI_ADINIZ?driver=ODBC+Driver+17+for+SQL+Server
-   - Not: Bilgisayarınızda yüklü olan ODBC Driver versiyonuna göre (17, 18 vb.) bu kısmı güncellemeyi unutmayın
